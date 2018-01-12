@@ -1,5 +1,8 @@
 html{
-  background-color: whitesmoke;
+ /* background-image: url("background.png") ;*/
+  background-size: 80%;
+  background-image:url("file://background.png");
+  background:
 }
 body{
   margin: 0;
