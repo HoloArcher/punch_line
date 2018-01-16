@@ -98,3 +98,9 @@ h1{
   padding-right:4%;
   padding-left:4%;
 }
+.img{
+  background-image: url("media/pic1.jpeg");
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+}
+/*<img src="media/pic1.jpeg" alt="" class="img">*/
