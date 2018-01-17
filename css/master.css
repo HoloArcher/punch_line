@@ -95,10 +95,9 @@ h1, h2, p, a{
   padding-top: 15%;
   margin-top: 0;
   color: white;
-  max-height: 20%;
+  max-height: 10em;
   flex-grow:2;
   flex-shrink: 2;
-  max-width: 50%;
   min-width: 20%;
   margin: 5px;
 }
@@ -112,7 +111,7 @@ h1, h2, p, a{
 
 /*images*/
 .img1{
-  background-image: url("media/img1.jpeg");
+  background-image: url("media/img1.jpg");
   background-size:cover;
   background-repeat: no-repeat;
 }
