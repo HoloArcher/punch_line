@@ -83,81 +83,47 @@ h1, h2, p, a{
 }
 /*Content*/
 .content-main{
-  padding:10%;
+  padding:inherit;
   padding-top: 3%;
   display:flex;
-  justify-content: flex-start;
-  flex-wrap:wrap;
+padding:2em
+
 }
 .block1{
- /*
-  display:block;
-  padding: 2%;
-  padding-top: 15%;
-  margin-top: 0;
+  display:inline-flex;
   color: white;
-  max-height: 10em;
-  flex-grow:2;
+  flex-grow: 2;
   flex-shrink: 2;
-  min-width: 20%;
-  margin: 5px;
-  */
-  display:block;
-  padding: 0.5%;
-  margin-top: 0;
-  position: relative;
-  flex-grow:2;
-  flex-shrink: 2;
-  margin: 5px;
-  width: 200px;
+  flex-wrap:wrap;
+  justify-content:center;
+  overflow: hidden;
+
 }
 .block-con{
   background-color: rgba(50,255,255,0.9);
   height: 100%;
   width: 100%;
 }
-
+.block2{
+  padding:inherit;
+  height: 300px;
+  max-width: 300px;
+  overflow:hidden;
+  justify-content:center;
+  display: flex;
+  margin: 10px;
+  transition: 0.5s;
+}
+.block2:hover{
+  height: 310px;
+  max-width: 310px;
+  margin:0;
+}
 /*<img src="media/pic1.jpeg" alt="" class="img">*/
 
 /*images*/
-.img1{
-  background-image: url("media/img1.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-.img2{
-  background-image: url("media/img2.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-.img3{
-  background-image: url("media/img3.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-.img4{
-  background-image: url("media/img4.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-.img5{
-  background-image: url("media/img5.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-.image-h{
-height:auto;
-width:100%;
-overflow: hidden;
-}
 .image{
-height:300px;
-width:auto;
-overflow: hidden;
-}
-.centered {
-position: absolute;
-left: 50%;
-transform: translate(-50%, -50%);
+  top: 50%;
+  height: 100%;
+  left: 50%;
 }
