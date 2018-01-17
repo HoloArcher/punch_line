@@ -86,10 +86,11 @@ h1, h2, p, a{
   padding:10%;
   padding-top: 3%;
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap:wrap;
 }
 .block1{
+ /*
   display:block;
   padding: 2%;
   padding-top: 15%;
@@ -100,6 +101,15 @@ h1, h2, p, a{
   flex-shrink: 2;
   min-width: 20%;
   margin: 5px;
+  */
+  display:block;
+  padding: 0.5%;
+  margin-top: 0;
+  position: relative;
+  flex-grow:2;
+  flex-shrink: 2;
+  margin: 5px;
+  width: 200px;
 }
 .block-con{
   background-color: rgba(50,255,255,0.9);
@@ -136,6 +146,18 @@ h1, h2, p, a{
   background-repeat: no-repeat;
 
 }
+.image-h{
+height:auto;
+width:100%;
+overflow: hidden;
+}
 .image{
-
+height:300px;
+width:auto;
+overflow: hidden;
+}
+.centered {
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
 }
