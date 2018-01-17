@@ -3,7 +3,6 @@ body{
   background-color: white;
   margin: 0;
   padding: 0;
-
 }
 
 /*Color*/
@@ -21,13 +20,15 @@ body{
   font-size: 50px;
   background-color: var(--col1);
   margin: 0;
-  padding:1em;
+  padding: 1em;
   color: white;
 }
 
-h1, h2, p, a{
-  padding: 0;
-  margin: 0;
+h1{
+  font-family: monospace;
+}
+
+h1, h2, h3, p, a{
   text-decoration: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -35,6 +36,7 @@ h1, h2, p, a{
   -moz-user-select: none;
   -ms-user-select: none;
   text-decoration: none;
+  cursor: default;
 }
 
 /*Navi*/
@@ -49,7 +51,7 @@ h1, h2, p, a{
   text-align: center;
   transition-duration: 0.5s;
   opacity: 0.8;
-  display:inline-block;
+  display: inline-block;
 }
 
 .navi-bar:hover{
@@ -72,56 +74,79 @@ h1, h2, p, a{
   color: white;
   font-size: 20px;
   transition-duration: 1s;
+  font-family: "times";
 }
 
 .navi-bar a:hover{
   color:var(--col1);
   transition-duration: 0.5s;
 }
+
 .navi-current{
   background-color: var(--col1);
 }
-/*Content*/
-.content-main{
-  padding:inherit;
-  padding-top: 3%;
-  display:flex;
-padding:2em
 
+/*Content*/
+
+.content-main{
+  padding: inherit;
+  padding-top: 3%;
+  display: flex;
+  padding: 2em
 }
+
 .block1{
-  display:inline-flex;
+  display: inline-flex;
   color: white;
   flex-grow: 2;
   flex-shrink: 2;
-  flex-wrap:wrap;
-  justify-content:center;
+  flex-wrap: wrap;
+  justify-content: center;
   overflow: hidden;
 
 }
 .block-con{
-  background-color: rgba(50,255,255,0.9);
-  height: 100%;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  height: 0%;
   width: 100%;
+  bottom: 0px;
+  text-align: center;
+  color: rgba(0,0,0,0);
+  transition: 0.5s;
+  font-family: helvetica;
 }
+
+.block2:hover .block-con{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    transition: 1s;
+    height: 47%;
+  }
+
 .block2{
-  padding:inherit;
+  padding: inherit;
   height: 300px;
   max-width: 300px;
-  overflow:hidden;
-  justify-content:center;
+  overflow: hidden;
+  justify-content: center;
   display: flex;
   margin: 10px;
   transition: 0.5s;
+  position: relative;
 }
+
 .block2:hover{
   height: 310px;
   max-width: 310px;
-  margin:0;
+  margin: 0;
+  transition: 1s;
 }
+
 /*<img src="media/pic1.jpeg" alt="" class="img">*/
 
 /*images*/
+
 .image{
   top: 50%;
   height: 100%;
