@@ -38,7 +38,14 @@ h1, h2, h3, p, a{
   text-decoration: none;
   cursor: default;
 }
-
+h3, p{
+  margin: 0px;
+  margin-top: 5px;
+}
+p{
+  padding-left:5%;
+  padding-right: 5%;
+}
 /*Navi*/
 
 .navi-bar{
@@ -51,7 +58,7 @@ h1, h2, h3, p, a{
   text-align: center;
   transition-duration: 0.5s;
   opacity: 0.8;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .navi-bar:hover{
@@ -69,7 +76,7 @@ h1, h2, h3, p, a{
   text-align: center;
   text-decoration: none;
   padding: 1em;
-  padding-left: 2em;
+  padding-left: 2;
   padding-right: 2em;
   color: white;
   font-size: 20px;
@@ -92,7 +99,7 @@ h1, h2, h3, p, a{
   padding: inherit;
   padding-top: 3%;
   display: flex;
-  padding: 2em
+  padding: 3em
 }
 
 .block1{
@@ -103,8 +110,8 @@ h1, h2, h3, p, a{
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
-
 }
+
 .block-con{
   background-color: rgba(0,0,0,0);
   position: absolute;
@@ -113,19 +120,20 @@ h1, h2, h3, p, a{
   bottom: 0px;
   text-align: center;
   color: rgba(0,0,0,0);
-  transition: 0.5s;
+  transition: 1s;
   font-family: helvetica;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .block2:hover .block-con{
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-    transition: 1s;
-    height: 47%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  transition: 1s;
+  height: 50%;
   }
 
 .block2{
-  padding: inherit;
   height: 300px;
   max-width: 300px;
   overflow: hidden;
@@ -134,12 +142,11 @@ h1, h2, h3, p, a{
   margin: 10px;
   transition: 0.5s;
   position: relative;
+  transition: 1s;
 }
 
-.block2:hover{
-  height: 310px;
-  max-width: 310px;
-  margin: 0;
+.block2:hover .image{
+  height: 105%;
   transition: 1s;
 }
 
@@ -151,4 +158,5 @@ h1, h2, h3, p, a{
   top: 50%;
   height: 100%;
   left: 50%;
+  transition: 1s;
 }
