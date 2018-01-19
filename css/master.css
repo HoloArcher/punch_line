@@ -13,22 +13,19 @@ body{
   :root {--col4:#6A6968;}
   :root {--col5:#DB8415;}
 
-/*Header*/
-
-.header{
-  text-align: center;
-  font-size: 50px;
-  background-color: var(--col1);
-  margin: 0;
-  padding: 1em;
-  color: white;
-}
 
 h1{
   font-family: monospace;
-}
 
-h1, h2, h3, p, a{
+}
+h4 a{
+  font-size: 25px;
+  color: #565656;
+}
+a, p{
+  text-decoration: none;
+}
+h1, h2, h3{
   text-decoration: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -42,10 +39,27 @@ h3, p{
   margin: 0px;
   margin-top: 5px;
 }
+
+li{
+  list-style-type: none;
+}
+
 p{
   padding-left:5%;
   padding-right: 5%;
 }
+
+/*Header*/
+
+.header{
+  text-align: center;
+  font-size: 50px;
+  background-color: var(--col1);
+  margin: 0;
+  padding: 1em;
+  color: white;
+}
+
 /*Navi*/
 
 .navi-bar{
@@ -58,7 +72,7 @@ p{
   text-align: center;
   transition-duration: 0.5s;
   opacity: 0.8;
-  display: inline-flex;
+  display: inline-block;
 }
 
 .navi-bar:hover{
@@ -76,12 +90,12 @@ p{
   text-align: center;
   text-decoration: none;
   padding: 1em;
-  padding-left: 2;
+  padding-left: 2em;
   padding-right: 2em;
   color: white;
   font-size: 20px;
   transition-duration: 1s;
-  font-family: "times";
+  font-family: "Roboto", sans-serif;
 }
 
 .navi-bar a:hover{
@@ -99,7 +113,8 @@ p{
   padding: inherit;
   padding-top: 3%;
   display: flex;
-  padding: 3em
+ /* padding: 10%;*/
+  padding-top: 0;
 }
 
 .block1{
@@ -107,6 +122,7 @@ p{
   color: white;
   flex-grow: 2;
   flex-shrink: 2;
+  padding: inherit;
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
@@ -139,7 +155,7 @@ p{
   overflow: hidden;
   justify-content: center;
   display: flex;
-  margin: 10px;
+  margin: 1px;
   transition: 0.5s;
   position: relative;
   transition: 1s;
@@ -159,4 +175,21 @@ p{
   height: 100%;
   left: 50%;
   transition: 1s;
+}
+
+/* FOOTER*/
+footer{
+  width: 100%;
+  background-color: #fafafa;
+  bottom: 0px;
+  padding-bottom: 5%;
+  margin-top: 5em;
+  text-align: center;
+  border-top: 2px solid #ebebeb;
+  font-size: 15px;
+  font-family:"Roboto", sans-serif;
+  Color: #737373;
+}
+.material-icons {
+  font-size: 15px!important;
 }
