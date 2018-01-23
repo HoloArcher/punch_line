@@ -8,36 +8,23 @@ body{
 /*Color*/
 
   :root {--col1:#fafafa;}
-  :root {--col2:#ff1a00;}
-  :root {--col3:#005581;}
-  :root {--col4:#6A6968;}
-  :root {--col5:#DB8415;}
+  :root {--col2:#ff1a00;} /*spicy RED*/
+  :root {--col3:#005581;} /*Main BLue*/
+  :root {--col4:#404040;}
+  :root {--col5:#ebebeb;} /*Border*/
 
+a, p ,h1, h3{
+  text-decoration: none;
+}
 
 h1{
-  font-family: monospace;
-
-}
-
-h4 a{
-  font-size: 25px;
-  color: #565656;
-}
-
-a, p{
-  text-decoration: none;
-}
-
-h1, h3{
-  text-decoration: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  text-decoration: none;
-  cursor: default;
   margin: 0;
+  font-family: 'Amatic SC', cursive;
 }
 
 h3, p{
@@ -57,29 +44,26 @@ p, h2{
 
 /*Header*/
 
-.header{
+header{
   text-align: center;
-  font-size: 50px;
+  font-size: 70px;
   margin: 0;
-  padding: 5%;
-  background-color: white;
-  color: var(--col3);
+  padding: 2%;
+  background-color: var(--col4);
+  color: white;
 }
 
 /*Navi*/
 
 .navi-bar{
   background-color: var(--col1);
-  list-style: none;
   margin: 0;
   width: 100%;
   height: auto;
-  padding: 0;
   text-align: center;
-  display: inline-block;
-  border-top: 2px solid #ebebeb;
-  border-bottom: 2px solid #ebebeb;
-  margin-bottom: 1em;
+  border-top: 2px solid var(--col5);
+  border-bottom: 2px solid var(--col5);
+  padding: 0;
 }
 
 .navi-bar li{
@@ -90,11 +74,9 @@ p, h2{
 .navi-bar a{
   display: inline-block;
   text-align: center;
-  text-decoration: none;
   padding: 1em;
   padding-left: 2em;
   padding-right: 2em;
-
   color: var(--col3);
   font-size: 20px;
   transition-duration: 1s;
@@ -125,7 +107,7 @@ p, h2{
   padding-top: 0;
 }
 .content-imp h2, a{
-    border-bottom: 2px solid #ebebeb;
+    border-bottom: 2px solid var(--col5);
 
 }
 .contain-img{
@@ -139,7 +121,7 @@ p, h2{
   column-count: 10;
 }
 
-.block-con{
+.block-container{
   background-color: rgba(0,0,0,0);
   position: absolute;
   height: 0%;
@@ -153,7 +135,7 @@ p, h2{
   padding-right: 5px;
 }
 
-.block-img:hover .block-con{
+.block-img:hover .block-container{
   background-color: rgba(0,0,0,0.8);
   color: white;
   transition: 1s;
@@ -189,6 +171,7 @@ p, h2{
 }
 
 /* FOOTER*/
+
 footer{
   width: 60%;
   background-color: var(--col1);
@@ -200,26 +183,17 @@ footer{
   display: inline-block;
   justify-content: center;
   text-align: center;
-  border-top: 2px solid #ebebeb;
+  border-top: 2px solid var(--col5);
   font-size: 15px;
   font-family:"Roboto", sans-serif;
   Color: #737373;
 }
-.material-icons {
-  font-size: 15px!important;
-}
 
 .footer-colum{
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 1em;
   text-align: center;
   width: 50%;
   float: left;
-}
 
-.footer-columM{
-  width: 100%;
-  text-align: center;
-  float: left;
-  padding-top: 1em
 }
