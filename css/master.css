@@ -10,7 +10,7 @@ body{
   :root {--col1:#fafafa;}
   :root {--col2:#ff1a00;} /*spicy RED*/
   :root {--col3:#005581;} /*Main BLue*/
-  :root {--col4:#404040;}
+  :root {--col4:#404040;} /* GRAY*/
   :root {--col5:#ebebeb;} /*Border*/
 
 a, p ,h1, h3{
@@ -25,6 +25,7 @@ h1{
   -ms-user-select: none;
   margin: 0;
   font-family: 'Amatic SC', cursive;
+  font-weight: lighter;
 }
 
 h3, p{
