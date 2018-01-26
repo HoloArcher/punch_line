@@ -9,8 +9,8 @@ body{
 
   :root {--col1:#fafafa;}
   :root {--col2:#ff1a00;} /*spicy RED*/
-  :root {--col3:#005581;} /*Main BLue*/
-  :root {--col4:#404040;} /* GRAY*/
+  :root {--col3:#3c2323;} /*Main BLue*/
+  :root {--col4:#3c2323;} /* GRAY*/
   :root {--col5:#ebebeb;} /*Border*/
 
 a, p ,h1, h3{
@@ -44,16 +44,24 @@ p, h2{
 }
 
 /*Header*/
-
+.trump{
+  border-radius: 50%;
+  border: 3px solid gray;
+  height: 300px;
+   max-width:300px;
+   margin: 1em;
+}
 header{
   text-align: center;
   font-size: 70px;
   margin: 0;
   padding: 2%;
-  background-color: var(--col4);
   color: white;
+/*  background-color: var(--col4);*/
+  background-image: url(media/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 /*Navi*/
 
 .navi-bar{
@@ -95,22 +103,29 @@ header{
 }
 
 .content-about{
+  display: inline-flex;
+  padding: 10%;
   padding-top: 3%;
-  display: flex;
-  padding: 15%;
-  padding-top: 0;
+  width: 80%;
 }
 
 .content-imp{
   padding-top: 3%;
   display: block;
-  padding: 15%;
+  padding: 10%;
   padding-top: 0;
 }
-.content-imp h2, a{
-    border-bottom: 2px solid var(--col5);
 
+.content-imp h2, a{
+  border-bottom: 2px solid var(--col5);
+  text-align: center;
 }
+
+.content-imp p{
+  text-align: center;
+  padding: inherit;
+}
+
 .contain-img{
   display: inline-flex;
   flex-grow: 2;
@@ -120,6 +135,10 @@ header{
   justify-content: center;
   overflow: hidden;
   column-count: 10;
+}
+
+.block-text{
+
 }
 
 .block-container{
