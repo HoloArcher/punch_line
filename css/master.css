@@ -128,12 +128,15 @@ li{
   list-style-type: none;
 }
 
-p, h2{
+p{
   padding-left:5%;
   padding-right: 5%;
   font-family: sans-serif;
 }
-
+h2{
+  text-align: center;
+  border-bottom: 2px solid var(--col5);
+}
 /*Header*/
 
 .trump{
@@ -150,7 +153,6 @@ header{
   margin: 0;
   padding: 10%;
   color: white;
-/*  background-color: var(--col4);*/
   background-image: url(media/background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +182,7 @@ nav{
 .navi-bar li{
   display: inline;
   width: 100%;
-  transition-duration: 1s;
+  transition: 1s;
 }
 
 .navi-bar a{
@@ -193,30 +195,23 @@ nav{
   font-size: 20px;
   transition-duration: 1s;
   font-family: "Roboto", sans-serif;
-}
-.navi-bar a:hover{
-  background-color: gray;
-  color: white;
-
-}
-
-@media screen and (max-width: 950px){
-  .navi-bar {
-    display: grid;
-  }
-  .navi-bar a{
-    padding-left: 10%;
-  }
+  border-radius: 20px;
 }
 
 
 /*Content*/
 
 .content{
-  padding:10%;
+  padding: 10%;
   padding-top: 3%;
-  display: flex;
+  display: block;
   padding-bottom: 5%;
+}
+
+.content-row{
+  display: block;
+  height: auto;
+  overflow: hidden;
 }
 
 .contain-img{
@@ -233,7 +228,7 @@ nav{
   width: 100%;
   bottom: 0px;
   text-align: center;
-  color: rgba(0,0,0,0);
+  color: white;
   transition: 1s;
   font-family: helvetica;
   padding-left: 5px;
@@ -241,13 +236,13 @@ nav{
 }
 
 .block-img:hover .block-container{
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
   transition: 1s;
   height: 61%;
 }
 
 .block-img{
-  height: 200px;
+  height: 300px;
   width: 300px;
   overflow: hidden;
   justify-content: center;
@@ -273,6 +268,12 @@ nav{
   transition: 1s;
 }
 
+img{
+  float:  left;
+  padding: 5%;
+  padding-top: 0;
+  padding-left: 0;
+}
 /* FOOTER*/
 
 footer{
@@ -299,4 +300,30 @@ footer{
   width: 50%;
   float: left;
 
+}
+
+@media screen and (max-width: 950px){
+  .navi-bar {
+    display: grid;
+  }
+  .content{
+    padding: 5%;
+  }
+  nav{
+    position: relative;
+  }
+  .block-img{
+    margin: 0px;
+    padding: 0px;
+  }
+  .contain-img{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+td {
+  padding: 1em;
+  background-color: white;
 }
