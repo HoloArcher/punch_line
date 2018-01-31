@@ -1,11 +1,10 @@
-/*Owner:holoarcher*/
+/*Creator:holoarcher*/
 body{
   background-color: whitesmoke;
   margin: 0;
   padding: 0;
   letter-spacing: 2px;
-  transition: 1s;
-  font-family: georgia;
+  font-family: sans-serif;
 }
 
 /*font*/
@@ -101,14 +100,24 @@ body{
 
 /*Color*/
 
-  :root {--col1:#fafafa;}
+  :root {--col1:#fafafa;} /*white*/
   :root {--col2:#ff1a00;} /*spicy RED*/
   :root {--col3:#3c2323;} /*Main BLue*/
   :root {--col4:#3c2323;} /* GRAY*/
   :root {--col5:#ebebeb;} /*Border*/
 
-a, p ,h1, h3{
+
+a, p ,h1, li{
   text-decoration: none;
+  list-style-type: none;
+}
+
+h3, p{
+  margin: 0px;
+  margin-top: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+
 }
 
 h1{
@@ -122,44 +131,22 @@ h1{
   font-weight: lighter;
 }
 
-h3, p{
-  margin: 0px;
-  margin-top: 5px;
-}
-
-li{
-  list-style-type: none;
-}
-
-p{
-  padding-left: 5%;
-  padding-right: 5%;
-  font-family: sans-serif;
-}
 h2{
   text-align: center;
   border-bottom: 2px solid var(--col5);
   letter-spacing: 10px;
 }
 
-td {
+td{
   padding: 2em;
   padding-bottom: 1em;
 }
+
 table{
   text-align: left;
   opacity: 0.9;
   justify-content: center;
   background-color: whitesmoke;
-}
-/*Header*/
-
-.trump{
-  border-radius: 50%;
-  border: 3px solid gray;
-  height: 300px;
-  max-width:300px;
-  margin: 1em;
 }
 
 header{
@@ -182,7 +169,6 @@ nav{
   position: sticky;
   top: 0;
   z-index: 999;
-  letter-spacing: 10px;
 }
 
 .navi-bar{
@@ -211,18 +197,21 @@ nav{
   color: var(--col3);
   font-size: 20px;
   transition-duration: 1s;
-  font-family: "Roboto", sans-serif;
-  border-radius: 20px;
+  letter-spacing: 10px;
 }
-
 
 /*Content*/
 
-.content{
+.content-row{
+  padding: 10%;
+  padding-top: 0%;
   display: block;
+  padding-bottom: 5%;
+  height: auto;
+  overflow: hidden;
 }
 
-.content-row{
+.content-colum{
   padding: 10%;
   padding-top: 0%;
   display: block;
@@ -238,9 +227,6 @@ h2{
   padding: 1em;
 }
 
-#content-facilities{
-
-}
 
 #content-table{
   padding-top: 0;
@@ -269,7 +255,6 @@ h2{
   text-align: center;
   color: white;
   transition: 1s;
-  font-family: helvetica;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -308,7 +293,7 @@ h2{
 }
 
 img{
-  float: left;
+  float:  left;
   padding: 5%;
   padding-top: 0;
   padding-left: 0;
@@ -340,7 +325,23 @@ footer{
   float: left;
 
 }
-
+.kek{
+  display: block;
+  background-color: whitesmoke;
+  margin: 0;
+  padding-top: 10em ;
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0;
+  transition: 3s;
+}
 @media screen and (max-width: 950px){
   .navi-bar {
     display: grid;
@@ -364,13 +365,11 @@ footer{
   }
 }
 @media screen and (max-width: 1050px){
-  nav{
+  .navi-bar a{
     position: relative;
     letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 690px){
-  body{
-    display: none;
-  }
+  .kek{opacity:1;}
 }
