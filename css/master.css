@@ -151,7 +151,7 @@ table{
 
 header{
   text-align: center;
-  font-size: 70px;
+  font-size: 400%;
   margin: 0;
   padding: 10%;
   color: white;
@@ -195,12 +195,15 @@ nav{
   padding-left: 2em;
   padding-right: 2em;
   color: var(--col3);
-  font-size: 20px;
+  font-size: 130%;
   transition-duration: 1s;
   letter-spacing: 10px;
 }
 
 /*Content*/
+.content{
+  padding-top: 2%;
+}
 
 .content-row{
   padding: 10%;
@@ -212,9 +215,8 @@ nav{
 }
 
 .content-colum{
-  padding: 10%;
   padding-top: 0%;
-  display: block;
+  display: inline-block  ;
   padding-bottom: 5%;
   height: auto;
   overflow: hidden;
@@ -323,10 +325,9 @@ footer{
   text-align: center;
   width: 50%;
   float: left;
-
 }
 .kek{
-  display: block;
+  display: none;
   background-color: whitesmoke;
   margin: 0;
   padding-top: 10em ;
@@ -347,7 +348,7 @@ footer{
     display: grid;
   }
   .content{
-    padding: 5%;
+    padding: 0%;
   }
   nav{
     position: relative;
@@ -356,6 +357,8 @@ footer{
   .block-img{
     margin: 0px;
     padding: 0px;
+    width: 400px;
+    height: 400px;
   }
   .contain-img{
     display: inline-flex;
@@ -371,5 +374,5 @@ footer{
   }
 }
 @media screen and (max-width: 690px){
-  .kek{opacity:1;}
+  .kek{opacity:1;display:block}
 }
