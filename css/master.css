@@ -3,7 +3,7 @@ body{
   background-color: whitesmoke;
   margin: 0;
   padding: 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: sans-serif;
 }
 
@@ -247,8 +247,15 @@ h2{
   display: flex;
 }
 
+
+#content-table td{
+  padding: 6em;
+  padding-bottom: 2em;
+  padding-top: 3em;
+}
+
 #content-table{
-  padding-top: 0;
+  padding-top: 0%;
   padding-left: 0%;
   padding-right: 0%;
   background-image: url(media/background2.jpeg);
@@ -256,6 +263,12 @@ h2{
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+#content-table-trainingplan tr, #content-table-trainingplan td{
+  padding-top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .contain-img{
@@ -300,7 +313,29 @@ h2{
   transition: 1s;
 }
 
-/*<img src="media/pic1.jpeg" alt="" class="img">*/
+/*kontakt*/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
 /*images*/
 
