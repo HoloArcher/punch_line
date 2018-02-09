@@ -162,7 +162,10 @@ header{
   background-position: center;
   letter-spacing: 20px;
 }
+p{
+  letter-spacing: 1px;
 
+}
 /*Navi*/
 
 nav{
@@ -212,6 +215,15 @@ nav{
   padding-bottom: 5%;
   height: auto;
   overflow: hidden;
+  text-align: center;
+  border-bottom: 2px solid var(--col5);
+}
+
+.artikel1{
+  top: 50%;
+  height: auto;
+  left: 50%;
+  width: 100%;
 }
 
 .content-colum{
@@ -220,6 +232,8 @@ nav{
   padding-bottom: 5%;
   height: auto;
   overflow: hidden;
+  width: 49%;
+  text-align: center;
 }
 
 h2{
@@ -229,6 +243,9 @@ h2{
   padding: 1em;
 }
 
+#news_img{
+  display: flex;
+}
 
 #content-table{
   padding-top: 0;
