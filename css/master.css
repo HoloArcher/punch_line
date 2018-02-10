@@ -1,4 +1,4 @@
-/*Creator:holoarcher*/
+/*Creator:josiah Schiess*/
 body{
   background-color: whitesmoke;
   margin: 0;
@@ -100,11 +100,11 @@ body{
 
 /*Color*/
 
-  :root {--col1:#fafafa;} /*white*/
-  :root {--col2:#ff1a00;} /*spicy RED*/
-  :root {--col3:#3c2323;} /*Main BLue*/
-  :root {--col4:#3c2323;} /* GRAY*/
-  :root {--col5:#ebebeb;} /*Border*/
+  :root {--col1:#fafafa;} /*light white*/
+  :root {--col2:#ff1a00;} /*Very Spicy RED*/
+  :root {--col3:#3c2323;} /*Lindt milchschokolade  bLau*/
+  :root {--col4:#3c2323;} /* 3dgy GRAY*/
+  :root {--col5:#ebebeb;} /*US-Mexico Border colour*/
 
 
 a, p ,h1, li{
@@ -137,16 +137,13 @@ h2{
   letter-spacing: 10px;
 }
 
-td{
-  padding: 2em;
-  padding-bottom: 1em;
-}
-
 table{
   text-align: left;
   opacity: 0.9;
   justify-content: center;
   background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header{
@@ -155,23 +152,27 @@ header{
   margin: 0;
   padding: 10%;
   color: white;
-  background-image: url(media/background.jpeg);
+  background-image: url(media/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   letter-spacing: 20px;
 }
-p{
-  letter-spacing: 1px;
 
+#home{
+  height: 60vh;
+  font-size: 600%;
 }
+
+
 /*Navi*/
 
 nav{
   position: sticky;
   top: 0;
   z-index: 999;
+  transition: 0s;
 }
 
 .navi-bar{
@@ -188,7 +189,6 @@ nav{
 .navi-bar li{
   display: inline;
   width: 100%;
-  transition: 1s;
 }
 
 .navi-bar a{
@@ -199,7 +199,6 @@ nav{
   padding-right: 2em;
   color: var(--col3);
   font-size: 130%;
-  transition-duration: 1s;
   letter-spacing: 10px;
 }
 
@@ -226,6 +225,14 @@ nav{
   width: 100%;
 }
 
+.artikel2{
+  top: 50%;
+  height: auto;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+
 .content-colum{
   padding-top: 0%;
   display: inline-block  ;
@@ -247,15 +254,24 @@ h2{
   display: flex;
 }
 
-
+#news_img2{
+  width: 100%;
+  height: fit-content;
+}
 #content-table td{
-  padding: 6em;
-  padding-bottom: 2em;
-  padding-top: 3em;
+  padding:1em;
+  padding-left: 2em;
+  padding-right: 5em;
+}
+
+#content-table tr{
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 #content-table{
   padding-top: 0%;
+  width: 100%;
   padding-left: 0%;
   padding-right: 0%;
   background-image: url(media/background2.jpeg);
@@ -395,9 +411,13 @@ footer{
   opacity: 0;
   transition: 3s;
 }
+/*Size changes*/
 @media screen and (max-width: 950px){
   .navi-bar {
     display: grid;
+  }
+  img{
+    float: none;
   }
   .content{
     padding: 0%;
@@ -425,6 +445,6 @@ footer{
     letter-spacing: 1px;
   }
 }
-@media screen and (max-width: 690px){
+@media screen and (max-width: 500px){
   .kek{opacity:1;display:block}
 }
