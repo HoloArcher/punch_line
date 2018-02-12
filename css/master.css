@@ -5,6 +5,7 @@ body{
   padding: 0;
   letter-spacing: 1px;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 /*font*/
@@ -100,11 +101,8 @@ body{
 
 /*Color*/
 
-  :root {--col1:#fafafa;} /*light white*/
-  :root {--col2:#ff1a00;} /*Very Spicy RED*/
-  :root {--col3:#3c2323;} /*Lindt milchschokolade  bLau*/
-  :root {--col4:#3c2323;} /* 3dgy GRAY*/
-  :root {--col5:#ebebeb;} /*US-Mexico Border colour*/
+
+
 
 
 a, p ,h1, li{
@@ -133,7 +131,7 @@ h1{
 
 h2{
   text-align: center;
-  border-bottom: 2px solid var(--col5);
+  border-bottom: 2px solid #ebebeb;
   letter-spacing: 10px;
 }
 
@@ -176,13 +174,13 @@ nav{
 }
 
 .navi-bar{
-  background-color: var(--col1);
+  background-color: #fafafa;
   margin: 0;
   width: 100%;
   height: auto;
   text-align: center;
-  border-top: 2px solid var(--col5);
-  border-bottom: 2px solid var(--col5);
+  border-top: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
   padding: 0;
 }
 
@@ -197,7 +195,7 @@ nav{
   padding: 1em;
   padding-left: 2em;
   padding-right: 2em;
-  color: var(--col3);
+  color: #3c2323;
   font-size: 130%;
   letter-spacing: 10px;
 }
@@ -215,7 +213,7 @@ nav{
   height: auto;
   overflow: hidden;
   text-align: center;
-  border-bottom: 2px solid var(--col5);
+  border-bottom: 2px solid #ebebeb;
 }
 
 .artikel1{
@@ -372,7 +370,7 @@ img{
 
 footer{
   width: 60%;
-  background-color: var(--col1);
+  background-color: #fafafa;
   bottom: 0px;
   padding: 20%;
   padding-top: 2%;
@@ -381,9 +379,13 @@ footer{
   display: inline-block;
   justify-content: center;
   text-align: center;
-  border-top: 2px solid var(--col5);
+  border-top: 2px solid #ebebeb;
   font-size: 15px;
   font-family:"Roboto", sans-serif;
+  Color: #737373!important;
+}
+
+a:-webkit-any-link {
   Color: #737373;
 }
 
