@@ -385,10 +385,6 @@ footer{
   Color: #737373!important;
 }
 
-a:-webkit-any-link {
-  Color: #737373;
-}
-
 .footer-colum{
   padding-top: 0;
   padding-bottom: 1em;
